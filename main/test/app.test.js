@@ -3,7 +3,7 @@ const compress = require('../app.js')
 
 describe('test compression', function(){
 	it('returns empty string', function(){
-		assert.strictEqual(compress('', true))
+		assert.strictEqual(compress('', true), '')
 	})
 	it('returns a4b5c2d4', function(){
 		assert.strictEqual(compress('aaaabbbbbccdddd', true), 'a4b5c2d4')
