@@ -15,6 +15,6 @@ describe('test compression', function(){
 		assert.strictEqual(compress('a3b4c3', false), 'aaabbbbccc')
 	})
 	it('returns abcdd', function(){
-		assert.strictEqual(compress('abcd'), 'abcd2')
+		assert.strictEqual(compress('abcdd'), 'a1b1c1d2')
 	})
 })
